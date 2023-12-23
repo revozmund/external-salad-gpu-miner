@@ -1,0 +1,33 @@
+# Automated Mining Script
+
+This Python script automates the process of checking and running mining software on your system. It checks for specific processes in the Task Manager and initiates mining if they are not already running. The script also verifies the status of certain system processes.
+
+## Requirements
+
+- **Latest Version of t-rex Miner:** Ensure you have the latest version of t-rex miner installed on your system.
+- **Compatible Hardware:** Make sure your hardware is compatible with the mining software.
+
+## Usage
+
+1. **Adjusting Path Variables:**
+    - Edit the script file (`mining_script.py`) to update the following line with the correct path to `t-rex.exe`:
+        - `TREX_PATH = r'REPLACE_WITH_YOUR_TREX_PATH\t-rex.exe'`
+        
+    - Update the following line with the correct path to `salad.bat`:
+        - `SALAD_GPU_PATH = r'REPLACE_WITH_YOUR_SALAD_GPU_PATH\salad.bat'`
+
+2. **Running the Script:**
+    - Open Command Prompt (CMD) and navigate to the script directory.
+    - Execute the script by typing: `python mining_script.py`.
+
+3. **Functionality:**
+    - This script checks for the status of `t-rex.exe`, `vmwp.exe`, and `vmmemWSL` processes.
+    - If `t-rex.exe` is not running, the script will attempt to start it.
+    - If `vmwp.exe` or `vmmemWSL` is running, it will display a status message.
+
+4. **Public Distribution:**
+    - You are free to modify and share this script, adhering to the original quoted text by the contributor.
+
+## Acknowledgment
+
+This script was initially created to automate mining processes using `t-rex.exe` and `salad.bat`. Adjust the path variables as required. Modifications and improvements are welcomed.
